@@ -9,4 +9,10 @@ function displayconsole(output){
 }
 function displayDOM(output){
     document.getElementById("Mylabel").innerHTML =output;
+    
+}
+//CALLBACK
+function sum(a , b , callback){
+let results =a +b ;
+callback (results);
 }
