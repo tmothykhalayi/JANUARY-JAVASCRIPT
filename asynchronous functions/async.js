@@ -17,3 +17,6 @@ setTimeout(()=>{
 
 console.log ("daily ");
 console.log ("morning ");
+
+
+//async
