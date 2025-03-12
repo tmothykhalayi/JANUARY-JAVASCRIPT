@@ -34,3 +34,21 @@ fetchData("https://api.example.com/data")
         console.error("Error:", error);
     });
 //
+
+
+let stock ={
+fruits :["apple", "banana", "cherry", "orange", "grape"],
+utensils:["spoon", "fork", "knife", "plate", "cup"],
+vegetables :["carrot", "broccoli", "spinach", "potato", "tomato"]
+};
+let is_shop_open =true;
+let order=((time ,work)=>{
+    return new Promise((resolve, reject) => {
+        if( is_shop_open){
+            resolve (work())
+        }
+        else
+        reject(console.log("our shop is closed"));
+    });
+
+})
